@@ -22,13 +22,13 @@
 
 Алгоритм Флойда-Уоршелла (также известный как алгоритм Флойда) — это алгоритм динамического программирования для нахождения кратчайших путей во всех парах вершин взвешенного ориентированного графа.
 
-1)Создается матрица расстояний размера n × n, где n - это количество вершин в графе. Начальное значение каждого элемента в матрице - это вес ребра, которое соединяет соответствующие вершины, если такое ребро существует, иначе оно равно бесконечности.
+1) Создается матрица расстояний размера n × n, где n - это количество вершин в графе. Начальное значение каждого элемента в матрице - это вес ребра, которое соединяет соответствующие вершины, если такое ребро существует, иначе оно равно бесконечности.
 
-2)Для каждой пары вершин (i, j) в графе, попробуем найти путь, который проходит через вершину k (1 <= k <= n), где k является промежуточной вершиной на пути от i к j. Если такой путь короче, чем текущий путь от i к j, обновлям значение элемента матрицы расстояний (i, j) на значение нового пути.
+2) Для каждой пары вершин (i, j) в графе, попробуем найти путь, который проходит через вершину k (1 <= k <= n), где k является промежуточной вершиной на пути от i к j. Если такой путь короче, чем текущий путь от i к j, обновлям значение элемента матрицы расстояний (i, j) на значение нового пути.
 
-3)Повторяем шаг 2 для каждой промежуточной вершины k (1 <= k <= n).
+3) Повторяем шаг 2 для каждой промежуточной вершины k (1 <= k <= n).
 
-4)После завершения шага 3, матрица расстояний будет содержать кратчайшие расстояния между всеми парами вершин в графе.
+4) После завершения шага 3, матрица расстояний будет содержать кратчайшие расстояния между всеми парами вершин в графе.
 
 # 4. Произвольный метод реберной раскраски
 На вход подается граф в виде CSV файла, результатом выводится минимальное кол-во различных цветов.
@@ -37,13 +37,13 @@
 
 Произвольный метод реберной расскраски заключается в следующих шагах:
 
-1)Выбрать произвольное ребро из графа.
+1) Выбрать произвольное ребро из графа.
 
-2)Присвоить этому ребру произвольный цвет, например, цвет 1.
+2) Присвоить этому ребру произвольный цвет, например, цвет 1.
 
-3)Перейти к следующему ребру, которое не было раскрашено, и присвоить ему цвет, отличный от цвета любого инцидентного ребра.
+3) Перейти к следующему ребру, которое не было раскрашено, и присвоить ему цвет, отличный от цвета любого инцидентного ребра.
 
-4)Повторять шаг 3 для всех оставшихся нераскрашенных ребер графа.
+4) Повторять шаг 3 для всех оставшихся нераскрашенных ребер графа.
 
 # P.s. Весь код сделан в обучающих целях
 Я не являюсь профессиональным разработчиком, данные программы сделаны в целях обучения, я никого не призываю использовать данный код как профессиональный.
@@ -74,11 +74,11 @@ The Floyd-Warshell algorithm (also known as Floyd's algorithm) is a dynamic prog
 
 1) A distance matrix of size n × n is created, where n is the number of vertices in the graph. The initial value of each element in the matrix is the weight of the edge that connects the corresponding vertices, if such an edge exists, otherwise it is equal to infinity.
 
-2)For each pair of vertices (i, j) in the graph, let's try to find a path that passes through vertex k (1 <= k <= n), where k is an intermediate vertex on the path from i to j. If such a path is shorter than the current path from i to j, update the value of the distance matrix element (i, j) to the value of the new path.
+2) For each pair of vertices (i, j) in the graph, let's try to find a path that passes through vertex k (1 <= k <= n), where k is an intermediate vertex on the path from i to j. If such a path is shorter than the current path from i to j, update the value of the distance matrix element (i, j) to the value of the new path.
 
 3) Repeat step 2 for each intermediate vertex k (1 <= k <= n).
 
-4)After completing step 3, the distance matrix will contain the shortest distances between all pairs of vertices in the graph.
+4) After completing step 3, the distance matrix will contain the shortest distances between all pairs of vertices in the graph.
 
 # 4. Arbitrary edge coloring method
 A graph is submitted to the input in the form of a CSV file, the result is a minimum number of different colors.
@@ -87,13 +87,13 @@ The edge coloring method is a method of coloring the edges of a graph in such a 
 
 An arbitrary edge coloring method consists of the following steps:
 
-1)Select an arbitrary edge from the graph.
+1) Select an arbitrary edge from the graph.
 
 2) Assign an arbitrary color to this edge, for example, color 1.
 
-3)Go to the next edge that has not been colored and assign it a color different from the color of any incident edge.
+3) Go to the next edge that has not been colored and assign it a color different from the color of any incident edge.
 
-4)Repeat step 3 for all remaining unpainted edges of the graph.
+4) Repeat step 3 for all remaining unpainted edges of the graph.
 
 # P.s. All the code is made for educational purposes
 I am not a professional developer, these programs are made for training purposes, I do not encourage anyone to use this code as a professional.
